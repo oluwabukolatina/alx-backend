@@ -9,7 +9,18 @@ class AuthRoutes {
   public routes = (app: Application): void => {
     app
       .route(`${URLS.AUTH_URL}/register`)
-      .post(authMiddleware.validateRegister, this.authController.register);
+      .post(
+        authMiddleware.validateRegister,
+        authMiddleware.checkIfAnUnregisteredUser,
+        this.authController.registerUser,
+      );
+    app
+      .route(`${URLS.AUTH_URL}/login`)
+      .post(
+        authMiddleware.validateLogin,
+        authMiddleware.checkIfUser,
+        this.authController.loginUser,
+      );
   };
 }
 export default AuthRoutes;
