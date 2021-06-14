@@ -12,6 +12,7 @@ class AuthController {
         email: body.email,
         password: await Jwt.hashPassword(body.password),
       });
+      const token = await Jwt.createToken(user.id);
       if (!user)
         ResponseHandler.ErrorResponse(
           res,
@@ -24,7 +25,14 @@ class AuthController {
         res,
         statusCode.HTTP_CREATED,
         'User Created',
-        { user: { email: user.email, id: user.id, createdAt: user.createdAt } },
+        {
+          user: {
+            id: user.id,
+            email: user.email,
+            token,
+            createdAt: user.createdAt,
+          },
+        },
       );
     } catch (error) {
       return ResponseHandler.ServerErrorResponse(res);
