@@ -1,12 +1,7 @@
-import User from '../../../database/models/user.model';
+import User from '../../../db/models/user';
 
 class AuthService {
-  public static async create(data: {
-    firstName: string;
-    lastName: string;
-    email: string;
-    password: string;
-  }) {
+  public static async create(data: { email: string; password: string }) {
     try {
       return await User.create(data);
     } catch (e) {

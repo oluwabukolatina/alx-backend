@@ -2,33 +2,26 @@
 import { Response } from 'express';
 
 export default class ResponseHandler {
-  static ErrorResponse(
-    res: Response,
-    statusCode: number,
-    status: boolean,
-    message = '',
-  ) {
-    return res.status(statusCode).json({ message, status });
+  static ErrorResponse(res: Response, statusCode: number, message = '') {
+    return res.status(statusCode).json({ message, status: false });
   }
 
   static JoiErrorResponse(
     res: Response,
     statusCode: number,
-    status: boolean,
     error: any,
     message: string,
   ) {
-    return res.status(statusCode).json({ status, message, error });
+    return res.status(statusCode).json({ status: false, message, error });
   }
 
   static SuccessResponse(
     res: Response,
     statusCode: number,
-    status: boolean,
     message = '',
     data: any,
   ) {
-    return res.status(statusCode).json({ message, status, data });
+    return res.status(statusCode).json({ message, status: true, data });
   }
 
   static ServerErrorResponse(res: Response) {

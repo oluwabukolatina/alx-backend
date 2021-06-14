@@ -1,26 +1,29 @@
 import { Request, Response } from 'express';
-import { HTTP_CREATED } from '../../../utils/status-codes/http-status-codes';
+import * as statusCode from '../../../utils/status-codes/http-status-codes';
 import ResponseHandler from '../../../utils/responseHandler';
 import AuthService from '../service/auth.service';
+import Jwt from '../utils/jwt';
 
 class AuthController {
   public register = async ({ body }: Request, res: Response) => {
     try {
       const user = await AuthService.create({
-        lastName: body.lastName,
         email: body.email,
-        password: body.password,
-        firstName: body.firstName,
+        password: await Jwt.hashPassword(body.password),
       });
+      if (!user)
+        ResponseHandler.ErrorResponse(
+          res,
+          statusCode.HTTP_BAD_REQUEST,
 
-      // logger.info(user, 'user created');
-      if (!user) ResponseHandler.ErrorResponse(res, 400, false, 'try again');
+          'Please try again',
+        );
+
       return ResponseHandler.SuccessResponse(
         res,
-        HTTP_CREATED,
-        true,
+        statusCode.HTTP_CREATED,
         'User Created',
-        { user },
+        { user: { email: user.email, id: user.id, createdAt: user.createdAt } },
       );
     } catch (error) {
       return ResponseHandler.ServerErrorResponse(res);
