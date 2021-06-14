@@ -13,6 +13,7 @@ class ServiceRoutes {
         serviceMiddleware.validateCreateService,
         this.serviceController.createService,
       );
+    app.route(`${URLS.SERVICE_URL}`).get(this.serviceController.getServices);
   };
 }
 export default ServiceRoutes;

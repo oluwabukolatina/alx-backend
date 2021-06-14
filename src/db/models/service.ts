@@ -17,6 +17,9 @@ const Service = sequelize.define<ServiceInstance>(
     description: {
       type: DataTypes.TEXT,
     },
+    promoCode: {
+      type: DataTypes.STRING,
+    },
   },
   {},
 );
