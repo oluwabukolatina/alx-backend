@@ -4,7 +4,7 @@ import Sequelize from 'sequelize';
 
 const basename = _basename(module.filename);
 const env = process.env.NODE_ENV || 'development';
-const config = require(`${__dirname}/../config/config.json`)[env];
+const config = require(`${__dirname}/../config/config.ts`)[env];
 const db = {};
 
 let sequelize;

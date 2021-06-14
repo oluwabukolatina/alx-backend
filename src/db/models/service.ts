@@ -1,9 +1,9 @@
 import { DataTypes } from 'sequelize';
-import { UserInstance } from '../../modules/user/type/user.type';
+import { ServiceInstance } from '../../modules/service/type/service.type';
 import sequelize from '../database';
 
-const User = sequelize.define<UserInstance>(
-  'User',
+const Service = sequelize.define<ServiceInstance>(
+  'Service',
   {
     id: {
       type: DataTypes.INTEGER,
@@ -11,13 +11,13 @@ const User = sequelize.define<UserInstance>(
       primaryKey: true,
     },
 
-    email: {
+    name: {
       type: DataTypes.STRING,
     },
-    password: {
-      type: DataTypes.STRING,
+    description: {
+      type: DataTypes.TEXT,
     },
   },
   {},
 );
-export default User;
+export default Service;
