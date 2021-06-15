@@ -4,11 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc && npm run copy-static-assets",
+    "build": "tsc",
     "build-ts": "tsc",
     "debug-build": "npm run build && npm run start",
     "cont-int": "npm run test && npm run-script lint",
-    "copy-static-assets": "ts-node copyStaticAssets.ts",
     "dev": "nodemon src/bin/server.ts",
     "test": "jest --detectOpenHandles --forceExit --verbose --watch",
     "watch-test": "jest --watchAll --detectOpenHandles --forceExit --coverage --verbose --testTimeout=7000",
@@ -33,10 +32,8 @@
   "dependencies": {
     "@types/bcrypt": "^5.0.0",
     "@types/cors": "^2.8.9",
-    "@types/dotenv": "^8.2.0",
     "@types/express": "^4.17.7",
     "@types/express-rate-limit": "^5.1.1",
-    "@types/http-status-codes": "^1.2.0",
     "@types/jest": "^26.0.21",
     "@types/jsonwebtoken": "^8.5.1",
     "@types/morgan": "^1.9.1",
