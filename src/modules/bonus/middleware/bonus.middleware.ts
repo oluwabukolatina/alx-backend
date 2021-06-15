@@ -45,13 +45,13 @@ async function checkIfUserHasRedeemedTheServiceBonus(
       serviceId: Number(request.params.serviceId),
       userId: Number(request.user.id),
     });
-    logger.info(service);
+    logger.info(service.length);
 
-    if (service) {
+    if (service.length > 0) {
       return ResponseHandler.ErrorResponse(
         res,
         statusCode.HTTP_BAD_REQUEST,
-        'You can not use re-activate a bonus you have previously',
+        'You can not re-activate a bonus you have previously',
       );
     }
     return next();

@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">27.59% </span>
+                <span class="strong">62.07% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>8/29</span>
+                <span class='fraction'>18/29</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">33.33% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/6</span>
+                <span class='fraction'>2/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">14.29% </span>
+                <span class="strong">71.43% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/7</span>
+                <span class='fraction'>5/7</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">30.77% </span>
+                <span class="strong">61.54% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>8/26</span>
+                <span class='fraction'>16/26</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -152,20 +152,20 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -185,16 +185,16 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -238,21 +238,21 @@ import ServiceService from '../service/service.service';
 import ServiceHelper from '../utils/service.helper';
 &nbsp;
 class ServiceController {
-  public createService = <span class="fstat-no" title="function not covered" >async ({</span> body }: Request, res: Response) =&gt;<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" > {</span></span>
-<span class="cstat-no" title="statement not covered" >    try {</span>
-      const service = <span class="cstat-no" title="statement not covered" >await ServiceService.create({</span>
+  public createService = async ({ body }: Request, res: Response) =&gt; {
+    try {
+      const service = await ServiceService.create({
         name: body.name,
         description: body.description,
         promoCode: ServiceHelper.generatePromoCode(5),
       });
-<span class="cstat-no" title="statement not covered" >      if (!service)</span>
+      <span class="missing-if-branch" title="if path not taken" >I</span>if (!service)
 <span class="cstat-no" title="statement not covered" >        ResponseHandler.ErrorResponse(</span>
           res,
           statusCode.HTTP_BAD_REQUEST,
           'Please try again',
         );
 &nbsp;
-<span class="cstat-no" title="statement not covered" >      return ResponseHandler.SuccessResponse(</span>
+      return ResponseHandler.SuccessResponse(
         res,
         statusCode.HTTP_CREATED,
         'Service Created',
@@ -271,17 +271,17 @@ class ServiceController {
     }
   };
 &nbsp;
-  public getServices = <span class="fstat-no" title="function not covered" >async (r</span>equest: Request, res: Response) =&gt;<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" > {</span></span>
-<span class="cstat-no" title="statement not covered" >    try {</span>
-      const services = <span class="cstat-no" title="statement not covered" >await ServiceService.get();</span>
-<span class="cstat-no" title="statement not covered" >      if (!services)</span>
+  public getServices = async (request: Request, res: Response) =&gt; {
+    try {
+      const services = await ServiceService.get();
+      <span class="missing-if-branch" title="if path not taken" >I</span>if (!services)
 <span class="cstat-no" title="statement not covered" >        ResponseHandler.ErrorResponse(</span>
           res,
           statusCode.HTTP_BAD_REQUEST,
           'Please try again',
         );
 &nbsp;
-<span class="cstat-no" title="statement not covered" >      return ResponseHandler.SuccessResponse(</span>
+      return ResponseHandler.SuccessResponse(
         res,
         statusCode.HTTP_OK,
         'Fetched Services',
@@ -325,7 +325,7 @@ export default ServiceController;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Tue Jun 15 2021 11:01:58 GMT+0100 (West Africa Standard Time)
+                at Tue Jun 15 2021 22:51:21 GMT+0100 (West Africa Standard Time)
             </div>
         </div>
         <script src="../../../../prettify.js"></script>

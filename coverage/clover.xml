@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1623751318187" clover="3.2.0">
-  <project timestamp="1623751318187" name="All files">
-    <metrics statements="300" coveredstatements="207" conditionals="39" coveredconditionals="11" methods="55" coveredmethods="30" elements="394" coveredelements="248" complexity="0" loc="300" ncloc="300" packages="23" files="27" classes="27"/>
+<coverage generated="1623793881388" clover="3.2.0">
+  <project timestamp="1623793881388" name="All files">
+    <metrics statements="301" coveredstatements="241" conditionals="39" coveredconditionals="18" methods="55" coveredmethods="43" elements="395" coveredelements="302" complexity="0" loc="301" ncloc="301" packages="23" files="27" classes="27"/>
     <package name="src">
       <metrics statements="25" coveredstatements="25" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
       <file name="app.ts" path="/Users/tina/Documents/alx-backend/src/app.ts">
@@ -117,90 +117,90 @@
         <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="3" type="stmt"/>
         <line num="2" count="3" type="stmt"/>
-        <line num="4" count="4" type="stmt"/>
-        <line num="5" count="4" type="stmt"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
         <line num="11" count="3" type="stmt"/>
       </file>
     </package>
     <package name="src.middleware">
-      <metrics statements="12" coveredstatements="5" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <metrics statements="12" coveredstatements="10" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
       <file name="auth.middleware.ts" path="/Users/tina/Documents/alx-backend/src/middleware/auth.middleware.ts">
-        <metrics statements="12" coveredstatements="5" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <metrics statements="12" coveredstatements="10" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="3" type="stmt"/>
         <line num="3" count="3" type="stmt"/>
         <line num="4" count="3" type="stmt"/>
         <line num="5" count="3" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="9" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="9" count="4" type="cond" truecount="1" falsecount="1"/>
         <line num="10" count="0" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="21" count="0" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
         <line num="23" count="0" type="stmt"/>
         <line num="30" count="3" type="stmt"/>
       </file>
     </package>
     <package name="src.modules.auth.controller">
-      <metrics statements="23" coveredstatements="13" conditionals="4" coveredconditionals="1" methods="5" coveredmethods="3"/>
+      <metrics statements="23" coveredstatements="19" conditionals="4" coveredconditionals="2" methods="5" coveredmethods="5"/>
       <file name="auth.controller.ts" path="/Users/tina/Documents/alx-backend/src/modules/auth/controller/auth.controller.ts">
-        <metrics statements="23" coveredstatements="13" conditionals="4" coveredconditionals="1" methods="5" coveredmethods="3"/>
+        <metrics statements="23" coveredstatements="19" conditionals="4" coveredconditionals="2" methods="5" coveredmethods="5"/>
         <line num="2" count="3" type="stmt"/>
         <line num="3" count="3" type="stmt"/>
         <line num="4" count="3" type="stmt"/>
         <line num="5" count="3" type="stmt"/>
         <line num="6" count="3" type="stmt"/>
         <line num="9" count="3" type="stmt"/>
-        <line num="10" count="2" type="stmt"/>
-        <line num="11" count="2" type="stmt"/>
-        <line num="15" count="2" type="stmt"/>
-        <line num="16" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="16" count="3" type="cond" truecount="1" falsecount="1"/>
         <line num="17" count="0" type="stmt"/>
-        <line num="24" count="2" type="stmt"/>
+        <line num="24" count="3" type="stmt"/>
         <line num="38" count="0" type="stmt"/>
         <line num="42" count="3" type="stmt"/>
-        <line num="43" count="0" type="stmt"/>
-        <line num="44" count="0" type="stmt"/>
-        <line num="48" count="0" type="stmt"/>
-        <line num="53" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="53" count="1" type="cond" truecount="1" falsecount="1"/>
         <line num="54" count="0" type="stmt"/>
-        <line num="60" count="0" type="stmt"/>
-        <line num="61" count="0" type="stmt"/>
+        <line num="60" count="1" type="stmt"/>
+        <line num="61" count="1" type="stmt"/>
         <line num="70" count="0" type="stmt"/>
         <line num="74" count="3" type="stmt"/>
       </file>
     </package>
     <package name="src.modules.auth.middleware">
-      <metrics statements="29" coveredstatements="21" conditionals="8" coveredconditionals="5" methods="6" coveredmethods="5"/>
+      <metrics statements="29" coveredstatements="25" conditionals="8" coveredconditionals="6" methods="6" coveredmethods="6"/>
       <file name="auth.middleware.ts" path="/Users/tina/Documents/alx-backend/src/modules/auth/middleware/auth.middleware.ts">
-        <metrics statements="29" coveredstatements="21" conditionals="8" coveredconditionals="5" methods="6" coveredmethods="5"/>
+        <metrics statements="29" coveredstatements="25" conditionals="8" coveredconditionals="6" methods="6" coveredmethods="6"/>
         <line num="2" count="3" type="stmt"/>
         <line num="4" count="3" type="stmt"/>
         <line num="5" count="3" type="stmt"/>
         <line num="6" count="3" type="stmt"/>
-        <line num="20" count="7" type="stmt"/>
-        <line num="24" count="7" type="stmt"/>
-        <line num="27" count="7" type="cond" truecount="2" falsecount="0"/>
-        <line num="28" count="3" type="stmt"/>
-        <line num="31" count="3" type="stmt"/>
-        <line num="36" count="4" type="stmt"/>
-        <line num="43" count="6" type="stmt"/>
-        <line num="47" count="6" type="stmt"/>
-        <line num="50" count="6" type="cond" truecount="1" falsecount="1"/>
-        <line num="51" count="6" type="stmt"/>
-        <line num="54" count="6" type="stmt"/>
-        <line num="59" count="0" type="stmt"/>
-        <line num="73" count="0" type="stmt"/>
-        <line num="74" count="0" type="stmt"/>
-        <line num="75" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="20" count="5" type="stmt"/>
+        <line num="24" count="5" type="stmt"/>
+        <line num="27" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="36" count="3" type="stmt"/>
+        <line num="43" count="3" type="stmt"/>
+        <line num="47" count="3" type="stmt"/>
+        <line num="50" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="51" count="2" type="stmt"/>
+        <line num="54" count="2" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="73" count="1" type="stmt"/>
+        <line num="74" count="1" type="stmt"/>
+        <line num="75" count="1" type="cond" truecount="1" falsecount="1"/>
         <line num="76" count="0" type="stmt"/>
-        <line num="82" count="0" type="stmt"/>
+        <line num="82" count="1" type="stmt"/>
         <line num="84" count="0" type="stmt"/>
-        <line num="96" count="4" type="stmt"/>
-        <line num="97" count="4" type="stmt"/>
-        <line num="99" count="4" type="cond" truecount="2" falsecount="0"/>
-        <line num="100" count="2" type="stmt"/>
-        <line num="106" count="2" type="stmt"/>
+        <line num="96" count="3" type="stmt"/>
+        <line num="97" count="3" type="stmt"/>
+        <line num="99" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="100" count="0" type="stmt"/>
+        <line num="106" count="3" type="stmt"/>
         <line num="108" count="0" type="stmt"/>
         <line num="116" count="3" type="stmt"/>
       </file>
@@ -224,41 +224,42 @@
       <file name="auth.service.ts" path="/Users/tina/Documents/alx-backend/src/modules/auth/service/auth.service.ts">
         <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="3" type="stmt"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="6" count="2" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
         <line num="12" count="3" type="stmt"/>
       </file>
     </package>
     <package name="src.modules.auth.utils">
-      <metrics statements="8" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
+      <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
       <file name="jwt.ts" path="/Users/tina/Documents/alx-backend/src/modules/auth/utils/jwt.ts">
-        <metrics statements="8" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
         <line num="1" count="3" type="stmt"/>
         <line num="2" count="3" type="stmt"/>
         <line num="3" count="3" type="stmt"/>
         <line num="5" count="3" type="stmt"/>
-        <line num="7" count="2" type="stmt"/>
-        <line num="12" count="2" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
         <line num="19" count="3" type="stmt"/>
       </file>
     </package>
     <package name="src.modules.bonus.controller">
-      <metrics statements="11" coveredstatements="5" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="1"/>
+      <metrics statements="12" coveredstatements="6" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="1"/>
       <file name="bonus.controller.ts" path="/Users/tina/Documents/alx-backend/src/modules/bonus/controller/bonus.controller.ts">
-        <metrics statements="11" coveredstatements="5" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <metrics statements="12" coveredstatements="6" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="1"/>
         <line num="2" count="3" type="stmt"/>
         <line num="3" count="3" type="stmt"/>
         <line num="4" count="3" type="stmt"/>
         <line num="7" count="3" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
-        <line num="13" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="34" count="0" type="stmt"/>
-        <line num="38" count="3" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="14" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="39" count="2" type="stmt"/>
       </file>
     </package>
     <package name="src.modules.bonus.middleware">
@@ -315,26 +316,26 @@
       </file>
     </package>
     <package name="src.modules.service.controller">
-      <metrics statements="26" coveredstatements="8" conditionals="6" coveredconditionals="0" methods="7" coveredmethods="1"/>
+      <metrics statements="26" coveredstatements="16" conditionals="6" coveredconditionals="2" methods="7" coveredmethods="5"/>
       <file name="service.controller.ts" path="/Users/tina/Documents/alx-backend/src/modules/service/controller/service.controller.ts">
-        <metrics statements="26" coveredstatements="8" conditionals="6" coveredconditionals="0" methods="7" coveredmethods="1"/>
+        <metrics statements="26" coveredstatements="16" conditionals="6" coveredconditionals="2" methods="7" coveredmethods="5"/>
         <line num="2" count="3" type="stmt"/>
         <line num="3" count="3" type="stmt"/>
         <line num="4" count="3" type="stmt"/>
         <line num="5" count="3" type="stmt"/>
         <line num="8" count="3" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="15" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="15" count="1" type="cond" truecount="1" falsecount="1"/>
         <line num="16" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
         <line num="37" count="0" type="stmt"/>
         <line num="41" count="3" type="stmt"/>
-        <line num="42" count="0" type="stmt"/>
-        <line num="43" count="0" type="stmt"/>
-        <line num="44" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="44" count="1" type="cond" truecount="1" falsecount="1"/>
         <line num="45" count="0" type="stmt"/>
-        <line num="51" count="0" type="stmt"/>
+        <line num="51" count="1" type="stmt"/>
         <line num="60" count="0" type="stmt"/>
         <line num="67" count="3" type="stmt"/>
         <line num="68" count="0" type="stmt"/>
@@ -347,18 +348,18 @@
       </file>
     </package>
     <package name="src.modules.service.middleware">
-      <metrics statements="10" coveredstatements="4" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
       <file name="service.middleware.ts" path="/Users/tina/Documents/alx-backend/src/modules/service/middleware/service.middleware.ts">
-        <metrics statements="10" coveredstatements="4" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
         <line num="2" count="3" type="stmt"/>
         <line num="3" count="3" type="stmt"/>
         <line num="4" count="3" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="25" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="34" count="0" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="25" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
         <line num="37" count="3" type="stmt"/>
       </file>
     </package>
@@ -379,17 +380,17 @@
       </file>
     </package>
     <package name="src.modules.service.service">
-      <metrics statements="16" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+      <metrics statements="16" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
       <file name="service.service.ts" path="/Users/tina/Documents/alx-backend/src/modules/service/service/service.service.ts">
-        <metrics statements="16" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <metrics statements="16" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
         <line num="1" count="3" type="stmt"/>
         <line num="2" count="3" type="stmt"/>
         <line num="4" count="3" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="21" count="0" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
         <line num="23" count="0" type="stmt"/>
         <line num="28" count="0" type="stmt"/>
         <line num="29" count="0" type="stmt"/>
@@ -401,34 +402,34 @@
       </file>
     </package>
     <package name="src.modules.service.utils">
-      <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="service.helper.ts" path="/Users/tina/Documents/alx-backend/src/modules/service/utils/service.helper.ts">
-        <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="3" type="stmt"/>
         <line num="3" count="3" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
         <line num="9" count="3" type="stmt"/>
       </file>
     </package>
     <package name="src.modules.user.service">
-      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="user.service.ts" path="/Users/tina/Documents/alx-backend/src/modules/user/service/user.service.ts">
-        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="2" count="3" type="stmt"/>
         <line num="4" count="3" type="stmt"/>
-        <line num="6" count="4" type="stmt"/>
-        <line num="7" count="4" type="stmt"/>
-        <line num="9" count="2" type="stmt"/>
+        <line num="6" count="5" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.utils">
-      <metrics statements="8" coveredstatements="7" conditionals="1" coveredconditionals="0" methods="4" coveredmethods="3"/>
+      <metrics statements="8" coveredstatements="6" conditionals="1" coveredconditionals="0" methods="4" coveredmethods="2"/>
       <file name="responseHandler.ts" path="/Users/tina/Documents/alx-backend/src/utils/responseHandler.ts">
-        <metrics statements="5" coveredstatements="4" conditionals="1" coveredconditionals="0" methods="4" coveredmethods="3"/>
+        <metrics statements="5" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="4" coveredmethods="2"/>
         <line num="4" count="3" type="stmt"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="15" count="9" type="stmt"/>
-        <line num="24" count="2" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="15" count="6" type="stmt"/>
+        <line num="24" count="6" type="stmt"/>
         <line num="28" count="0" type="stmt"/>
       </file>
       <file name="urls.ts" path="/Users/tina/Documents/alx-backend/src/utils/urls.ts">
