@@ -4,7 +4,6 @@ import app from '../src/app';
 import URLS from '../src/utils/urls';
 import * as statusCodes from '../src/utils/status-codes/http-status-codes';
 
-
 jest.setTimeout(30000);
 describe('authentication /auth', () => {
   let email = '';
@@ -31,7 +30,7 @@ describe('authentication /auth', () => {
     const res = await request(app)
       .post(`${URLS.AUTH_URL}/register`)
       .send({ email: faker.internet.email() });
-      expect(res.status).toEqual(statusCodes.HTTP_BAD_REQUEST);
+    expect(res.status).toEqual(statusCodes.HTTP_BAD_REQUEST);
     expect(res.body.message).toEqual('Unable to register');
     expect(res.body.status).toEqual(false);
   });
@@ -60,7 +59,7 @@ describe('authentication /auth', () => {
   it('should not login a user without password /login', async () => {
     const res = await request(app)
       .post(`${URLS.AUTH_URL}/login`)
-        .send({ email,  });
+      .send({ email });
     expect(res.status).toEqual(statusCodes.HTTP_BAD_REQUEST);
     expect(res.body.message).toEqual('Unable to login');
     expect(res.body.status).toEqual(false);
