@@ -18,6 +18,9 @@ class ServiceRoutes {
     app
       .route(`${URLS.SERVICE_URL}`)
       .get(auth, this.serviceController.getServices);
+    app
+      .route(`${URLS.SERVICE_URL}/search`)
+      .post(auth, this.serviceController.searchService);
   };
 }
 export default ServiceRoutes;

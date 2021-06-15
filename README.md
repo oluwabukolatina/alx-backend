@@ -55,6 +55,3 @@ Api documentation generated with [postman](https://documenter.getpostman.com/vie
 - [Tina](https://github.com/oluwabukolatina)
 
 
-## command
-export DATABASE_URL=postgres://lftmajdg:8BH-ZM0uNOW8rtXg44q4mAM2GAeGRF6I@batyr.db.elephantsql.com/lftmajdg
-

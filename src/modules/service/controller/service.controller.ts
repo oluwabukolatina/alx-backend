@@ -38,18 +38,18 @@ class ServiceController {
     }
   };
 
-  public getServices = async (request: Request, response: Response) => {
+  public getServices = async (request: Request, res: Response) => {
     try {
       const services = await ServiceService.get();
       if (!services)
         ResponseHandler.ErrorResponse(
-          response,
+          res,
           statusCode.HTTP_BAD_REQUEST,
           'Please try again',
         );
 
       return ResponseHandler.SuccessResponse(
-        response,
+        res,
         statusCode.HTTP_OK,
         'Fetched Services',
         {
@@ -57,7 +57,30 @@ class ServiceController {
         },
       );
     } catch (error) {
-      return ResponseHandler.ServerErrorResponse(response);
+      return ResponseHandler.ServerErrorResponse(res);
+    }
+  };
+
+  /**
+   * search for service
+   */
+  public searchService = async ({ body }: Request, res: Response) => {
+    try {
+      const services = await ServiceService.search(body.search);
+      if (services)
+        ResponseHandler.SuccessResponse(
+          res,
+          statusCode.HTTP_OK,
+          `Searched For Services with query : ${body.search}`,
+          { services },
+        );
+      return ResponseHandler.ErrorResponse(
+        res,
+        statusCode.HTTP_BAD_REQUEST,
+        'Unable to search',
+      );
+    } catch (error) {
+      return ResponseHandler.ServerErrorResponse(res);
     }
   };
 }
