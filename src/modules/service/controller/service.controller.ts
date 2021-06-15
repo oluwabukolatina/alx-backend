@@ -50,7 +50,7 @@ class ServiceController {
 
       return ResponseHandler.SuccessResponse(
         response,
-        statusCode.HTTP_CREATED,
+        statusCode.HTTP_OK,
         'Fetched Services',
         {
           services,

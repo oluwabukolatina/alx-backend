@@ -12,10 +12,16 @@ class ServiceService {
       return error;
     }
   }
-
   public static async get() {
     try {
       return await Service.findAll();
+    } catch (error) {
+      return error;
+    }
+  }
+  public static async getOne(id: number) {
+    try {
+      return await Service.findByPk(id);
     } catch (error) {
       return error;
     }

@@ -2,7 +2,7 @@
 import { Response } from 'express';
 
 export default class ResponseHandler {
-  static ErrorResponse(res: Response, statusCode: number, message = '') {
+  static ErrorResponse(res: Response, statusCode: number, message: string) {
     return res.status(statusCode).json({ message, status: false });
   }
 
