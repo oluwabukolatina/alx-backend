@@ -67,17 +67,17 @@ class ServiceController {
   public searchService = async ({ body }: Request, res: Response) => {
     try {
       const services = await ServiceService.search(body.search);
-      if (services)
-        ResponseHandler.SuccessResponse(
+      if (!services)
+        return ResponseHandler.ErrorResponse(
           res,
-          statusCode.HTTP_OK,
-          `Searched For Services with query : ${body.search}`,
-          { services },
+          statusCode.HTTP_BAD_REQUEST,
+          'Unable to search',
         );
-      return ResponseHandler.ErrorResponse(
+      return ResponseHandler.SuccessResponse(
         res,
-        statusCode.HTTP_BAD_REQUEST,
-        'Unable to search',
+        statusCode.HTTP_OK,
+        `Searched For Services with query : ${body.search}`,
+        { services },
       );
     } catch (error) {
       return ResponseHandler.ServerErrorResponse(res);

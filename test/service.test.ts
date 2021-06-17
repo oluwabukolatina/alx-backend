@@ -42,7 +42,7 @@ describe('service /service', () => {
       .post(`${URLS.SERVICE_URL}`)
       .send({
         description: faker.lorem.sentence(),
-        name: faker.random.word(),
+        name: faker.vehicle.vehicle(),
       })
       .set('X-Auth-Token', token);
 

@@ -39,7 +39,7 @@ class ServiceService {
     try {
       return await Service.findAll({
         where: {
-          description: { [Op.iLike]: `%${q}%` },
+          name: { [Op.iLike]: `%${q}%` },
         },
       });
     } catch (error) {
