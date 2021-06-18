@@ -1,9 +1,9 @@
 # ALX
 > ALX TESTS
 ## Getting Started
->  [Technologies](#technologies-used) &middot; [Testing Tools](#testing-tools) &middot; [Installations](#installations) &middot; [API Endpoints](#api-endpoints) &middot; [Tests](#tests) &middot; [Acknowledgments](#acknowledgments) &middot; [Author](#author)
+>  [Technologies](#technologies-used) &middot; [Testing Tools](#testing-tools) &middot; [Installations](#installations) &middot; [API Endpoints](#api-endpoints) &middot; [Tests](#tests) &middot; [Acknowledgments](#acknowledgments) &middot; [Author](#author) &middot; [Backend Question](#BackendQuestion)
 ## Heroku App
-Application is deployed on Heroku. Use public URL [https://enigmatic-wildwood-43336.herokuapp.com](https://enigmatic-wildwood-43336.herokuapp.com) with API endpoints.
+Application is deployed on Heroku. Use public URL [https://alx-apis.herokuapp.com](https://alx-apis.herokuapp.com/api/v1/alx/service) with API endpoints.
 ## Swagger API Documentation
 API Documentation generated with [swagger](https://enigmatic-wildwood-43336.herokuapp.com/api-docs).
 ## POSTMAN API DOC
@@ -48,9 +48,12 @@ Api documentation generated with [postman](https://documenter.getpostman.com/vie
 - Run test for all endpoints
   > run the command below
   ```shell
-  $ npm test
+  $ npm run test
   ```
 ## Author
 - [Tina](https://github.com/oluwabukolatina)
 
 
+## BackendQuestions
+
+- [Answer](https://www.notion.so/c8556731360b4851b14c188e7a1fd104?v=0b6d00dcfcbf41aa81353e0dccab3669)
