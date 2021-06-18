@@ -4,8 +4,7 @@
   "plugins": [
     "@typescript-eslint",
     "security",
-    "prettier",
-    "mocha"
+    "prettier"
   ],
   "extends": [
     "airbnb-base",
@@ -35,8 +34,6 @@
       "error",
       "single"
     ],
-    "mocha/no-skipped-tests": "error",
-    "mocha/no-exclusive-tests": "error",
     //work in progress
     "indent": [
       "error",
@@ -58,23 +55,5 @@
     ],
     //           "space-before-function-paren": ["error", "always"],
     "no-return-await": 2
-  },
-  "settings": {
-    "mocha/additionalCustomNames": [
-      {
-        "name": "describeModule",
-        "type": "suite",
-        "interfaces": [
-          "BDD"
-        ]
-      },
-      {
-        "name": "testModule",
-        "type": "testCase",
-        "interfaces": [
-          "TDD"
-        ]
-      }
-    ]
   }
 }
